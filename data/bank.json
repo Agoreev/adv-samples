@@ -1,0 +1,82 @@
+{
+  "id": "bank",
+  "title": "Bank",
+  "image": "http://instreamatic.com/wp-content/uploads/2020/07/bank-128.png",
+  "questions": [
+    {
+      "text": "",
+      "track": "http://dztk6yq65a9he.cloudfront.net/static/creative/audio/12/6683B1.mp3",
+      "title": "Intro teaser",
+      "answers": {
+        "interest": {
+          "btnText": "Interest",
+          "text": "Interest",
+          "finalAnswers": [
+            {
+              "text": "",
+              "track": "http://dztk6yq65a9he.cloudfront.net/static/creative/audio/B0/4ECF4F.mp3",
+              "title": "AI Respose if Interest"
+            }
+          ]
+        },
+        "noInterest": {
+          "btnText": "No inteterst",
+          "text": "No interest",
+          "finalAnswers": [
+            {
+              "text": "",
+              "track": "http://dztk6yq65a9he.cloudfront.net/static/creative/audio/6A/A72BB5.mp3",
+              "title": "AI Respose if No interest"
+            }
+          ]
+        },
+        "StrongNo": {
+          "btnText": "Strong no",
+          "text": "Strong no",
+          "finalAnswers": [
+            {
+              "text": "",
+              "track": "http://dztk6yq65a9he.cloudfront.net/static/creative/audio/33/112F7A.mp3",
+              "title": "AI Respose if Strong no"
+            }
+          ]
+        },
+        "Silence": {
+          "btnText": "Silence",
+          "text": "Silence",
+          "finalAnswers": [
+            {
+              "text": "",
+              "track": "http://dztk6yq65a9he.cloudfront.net/static/creative/audio/1E/44F475.mp3",
+              "title": "AI Respose if Silence"
+            }
+          ]
+        },
+        "NotUnderstood": {
+          "btnText": "Not understood",
+          "text": "Not understood",
+          "questions": [
+            {
+              "text": "",
+              "track": "http://dztk6yq65a9he.cloudfront.net/static/creative/audio/18/ADFAFB.mp3",
+              "title": "AI Respose if Not understood",
+              "answers": {
+                "NotUnderstoodAgain": {
+                  "btnText": "Not understood again",
+                  "text": "Not understood again",
+                  "finalAnswers": [
+                    {
+                      "text": "",
+                      "track": "http://dztk6yq65a9he.cloudfront.net/static/creative/audio/01/BEE0A9.mp3",
+                      "title": "AI Respose if Not understood again"
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

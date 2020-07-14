@@ -1,0 +1,22 @@
+.Track {
+  align-self: stretch;
+  margin-bottom: 20px;
+  z-index: 500;
+  outline: none;
+}
+
+.Track * {
+  outline: none;
+}
+
+@media (min-width: 601px) {
+  .Track {
+    align-self: auto;
+    width: 600px;
+  }
+}
+
+.Vizualizer {
+  text-align: center;
+  margin-bottom: 20px;
+}

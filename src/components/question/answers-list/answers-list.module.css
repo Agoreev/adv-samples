@@ -1,0 +1,10 @@
+.AnswersList {
+  text-align: center;
+  z-index: 500;
+}
+
+.AnswersListTitle {
+  text-align: center;
+  font-size: 22px;
+  color: #333;
+}

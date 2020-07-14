@@ -1,0 +1,39 @@
+.Company {
+  width: 120px;
+  height: 140px;
+  margin: 30px 20px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: box-shadow 0.3s ease-out;
+}
+
+.Company:hover {
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.Image {
+  max-width: 100px;
+  margin-bottom: 10px;
+}
+
+.Title {
+  font-size: 18px;
+  color: #333;
+}
+
+@media (min-width: 700px) {
+  .Company {
+    width: 200px;
+    height: 200px;
+    margin: 20px;
+  }
+  .Image {
+    max-width: 128px;
+  }
+
+  .Title {
+    font-size: 18px;
+  }
+}

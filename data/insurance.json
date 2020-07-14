@@ -1,0 +1,87 @@
+{
+  "id": "insurance",
+  "title": "Insurance",
+  "image": "http://instreamatic.com/wp-content/uploads/2020/07/insurance-128.png",
+  "questions": [
+    {
+      "text": "Hey, I'm a sleepy driver. I didn't sleep well last night, but i drink a lot of coffee today? so I know I can drive for another hour ... easy, but, you know what? This time i didn't make it. Wanna know why?",
+      "track": "http://dztk6yq65a9he.cloudfront.net/static/creative/audio/9F/458DE0.mp3",
+      "title": "Intro teaser",
+      "answers": {
+        "interest": {
+          "btnText": "Interest",
+          "text": "Interest",
+          "finalAnswers": [
+            {
+              "text": "I think we all know what happened. Most traffic accidents happen dew to drawthiness and coffee won't help. Our insurance company kindly asks you to rest properly before you drive. Please stay safe!",
+              "track": "http://dztk6yq65a9he.cloudfront.net/static/creative/audio/EF/E529E1.mp3",
+              "title": "AI Respose if Interest"
+            }
+          ]
+        },
+        "noInterest": {
+          "btnText": "No inteterst",
+          "text": "No interest",
+          "finalAnswers": [
+            {
+              "text": "I couldn't tell you even if i want it to, because of a drawthiness I've got insure in major accident",
+              "track": "http://dztk6yq65a9he.cloudfront.net/static/creative/audio/8A/C09A0A.mp3",
+              "title": "AI Respose No Interest"
+            },
+            {
+              "text": "Ok, our insurance company asked me to say it again",
+              "track": "http://dztk6yq65a9he.cloudfront.net/static/creative/audio/40/98BC61.mp3",
+              "title": "AI Respose No Interest"
+            }
+          ]
+        },
+        "StrongNo": {
+          "btnText": "Strong no",
+          "text": "Strong no",
+          "finalAnswers": [
+            {
+              "text": "Ouch, that hearts",
+              "track": "http://dztk6yq65a9he.cloudfront.net/static/creative/audio/C8/0EC049.mp3",
+              "title": "AI Respose No Interest"
+            }
+          ]
+        },
+        "Silence": {
+          "btnText": "Silence",
+          "text": "Silence",
+          "finalAnswers": [
+            {
+              "text": "It feels like no once there, if you feel sleepy wake up now and get some rest",
+              "track": "http://dztk6yq65a9he.cloudfront.net/static/creative/audio/C4/A0185B.mp3",
+              "title": "AI Response if Silence"
+            }
+          ]
+        },
+        "NotUnderstood": {
+          "btnText": "Not understood",
+          "text": "Not understood",
+          "questions": [
+            {
+              "text": "I didn't get that. Let's try one more time. Say 'yes' or 'no'.",
+              "track": "http://dztk6yq65a9he.cloudfront.net/static/creative/audio/47/22125E.mp3",
+              "title": "AI Response if Not understood",
+              "answers": {
+                "NotUnderstoodAgain": {
+                  "btnText": "Not understood again",
+                  "text": "Not understood again",
+                  "finalAnswers": [
+                    {
+                      "text": "It make me sad, but i still don't understand what you saying. Next time take a deep breath and respond slowly.",
+                      "track": "http://dztk6yq65a9he.cloudfront.net/static/creative/audio/AA/2519D9.mp3",
+                      "title": "AI Response if Not understood again"
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

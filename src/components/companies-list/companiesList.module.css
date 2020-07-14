@@ -1,0 +1,12 @@
+.CompaniesList {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.Header {
+  font-size: 26px;
+
+  text-align: center;
+  color: #333;
+}

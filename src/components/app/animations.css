@@ -1,0 +1,83 @@
+.layout-enter {
+  opacity: 0;
+}
+
+.layout-enter-active {
+  opacity: 1;
+  transition: all 400ms ease-out;
+}
+
+.layout-exit {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.layout-exit-active {
+  opacity: 0;
+  transform: translateY(-100%);
+  transition: all 400ms ease-out;
+}
+
+.texts-enter {
+  opacity: 0;
+  max-height: 0;
+}
+
+.texts-enter-active {
+  opacity: 1;
+  max-height: 200px;
+  transition: all 700ms ease-out;
+}
+
+.texts-exit {
+  opacity: 1;
+  max-height: 200px;
+  transform: translateY(0);
+}
+
+.texts-exit-active {
+  opacity: 0;
+  max-height: 0;
+  transform: translateY(-300px);
+  transition: all 700ms ease-out;
+}
+
+.answers-list-enter {
+  opacity: 0;
+}
+
+.answers-list-enter-active {
+  opacity: 1;
+  transition: all 800ms ease-out;
+}
+
+.answers-list-exit {
+  opacity: 1;
+}
+
+.answers-list-exit-active {
+  opacity: 0;
+  transition: all 800ms ease-out;
+}
+
+.track-title-enter {
+  opacity: 0;
+  transform: translateX(-100%);
+}
+
+.track-title-enter-active {
+  opacity: 1;
+  transform: translateX(0);
+  transition: all 500ms ease-out;
+}
+
+.track-title-exit {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.track-title-exit-active {
+  opacity: 0;
+  transform: translateX(100%);
+  transition: all 500ms ease-out;
+}

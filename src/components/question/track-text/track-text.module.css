@@ -1,0 +1,44 @@
+.TrackText {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  width: auto;
+  margin: 0 auto 20px auto;
+}
+
+.TextsList {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.TextItem {
+  font-size: 2.4rem;
+  margin-bottom: 20px;
+  color: #999;
+}
+
+.TextBlock {
+  display: inline-block;
+  color: white;
+  background-color: rgb(1, 162, 255);
+  padding: 10px 25px;
+  border-radius: 4rem;
+  transition: color 400ms ease-out;
+}
+
+.Answer {
+  text-align: right;
+}
+.Answer .TextBlock {
+  background-color: #999;
+}
+.Question {
+  margin-right: 12rem;
+}
+
+@media (min-width: 901px) {
+  .TrackText {
+    width: 900px;
+  }
+}
