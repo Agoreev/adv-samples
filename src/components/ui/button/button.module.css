@@ -38,3 +38,8 @@
   background-color: rgb(255, 175, 1);
   color: white;
 }
+
+.Disabled {
+  color: #999;
+  border: 2px solid #999;
+}

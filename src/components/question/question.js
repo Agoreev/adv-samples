@@ -9,13 +9,17 @@ import { getRandomNumber } from "../../utils";
 class Question extends Component {
   state = {
     question: this.props.question,
+    answers: this.props.question.answers,
+    title: this.props.question.title,
+    track: this.props.question.track,
     questionsHistory: [],
     texts: [{ text: this.props.question.text, type: "question" }],
-    track: this.props.question.track,
+    selectedAnswer: null,
     showAnswers: false,
   };
 
-  onAnswerSelected = (answer) => {
+  onAnswerSelected = (answerId) => {
+    const answer = this.state.answers[answerId];
     if (answer.questions) {
       //if current answer has another question
       const questionNumber = getRandomNumber(answer.questions.length);
@@ -23,7 +27,9 @@ class Question extends Component {
       this.setState(({ texts, questionsHistory, question }) => {
         return {
           texts: [...texts, { text: answer.text, type: "answer" }],
+          title: newQuestion.title,
           track: newQuestion.track,
+          selectedAnswer: answerId,
           questionsHistory: [...questionsHistory, question], //add current question to history array
           showAnswers: false,
         };
@@ -32,6 +38,9 @@ class Question extends Component {
         this.setState(({ texts }) => {
           return {
             question: newQuestion,
+            answers: newQuestion.answers,
+            selectedAnswer: null,
+            title: newQuestion.title,
             texts: [...texts, { text: newQuestion.text, type: "question" }],
           };
         });
@@ -43,15 +52,17 @@ class Question extends Component {
       this.setState(({ texts, questionsHistory, question }) => {
         return {
           texts: [...texts, { text: answer.text, type: "answer" }],
+          title: finalAnswer.title,
           track: finalAnswer.track,
-          questionsHistory: [...questionsHistory, question], //add current question to history array
+          selectedAnswer: answerId,
+          //questionsHistory: [...questionsHistory, question], //add current question to history array
           showAnswers: false,
         };
       });
       setTimeout(() => {
         this.setState(({ texts }) => {
           return {
-            question: finalAnswer,
+            title: finalAnswer.title,
             texts: [...texts, { text: finalAnswer.text, type: "question" }],
           };
         });
@@ -74,30 +85,28 @@ class Question extends Component {
     this.setState(({ texts, questionsHistory }) => {
       return {
         question: questionsHistory[questionsHistory.length - 1],
+        answers: questionsHistory[questionsHistory.length - 1].answers,
+        title: questionsHistory[questionsHistory.length - 1].title,
         track: questionsHistory[questionsHistory.length - 1].track,
+        selectedAnswer: null,
         questionsHistory: questionsHistory.slice(
           0,
           questionsHistory.length - 1
         ),
-        answer: null,
         texts: texts.slice(0, texts.length - 2),
       };
     });
   };
 
   render() {
-    const { question, track, texts, showAnswers } = this.state;
+    const { track, showAnswers, answers, title, selectedAnswer } = this.state;
 
     return (
       <div className={classes.Question}>
         {/* <TrackText texts={texts} /> */}
         <SwitchTransition mode="out-in">
-          <CSSTransition
-            classNames="track-title"
-            timeout={500}
-            key={question.title}
-          >
-            <h3 className={classes.TrackTitle}>{question.title}</h3>
+          <CSSTransition classNames="track-title" timeout={500} key={title}>
+            <h3 className={classes.TrackTitle}>{title}</h3>
           </CSSTransition>
         </SwitchTransition>
 
@@ -111,9 +120,10 @@ class Question extends Component {
         >
           <div>
             <AnswersList
-              answers={question ? question.answers : null}
+              answers={answers ? answers : null}
               onAnswerSelected={this.onAnswerSelected}
               onBackClicked={this.onBackClicked}
+              selectedAnswer={selectedAnswer}
             />
           </div>
         </CSSTransition>

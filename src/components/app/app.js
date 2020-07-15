@@ -21,10 +21,9 @@ class App extends Component {
       .then((response) => response.json())
       .then((responseJson) => {
         const companies = {};
-        responseJson.map((company) => {
+        responseJson.forEach((company) => {
           const comp = JSON.parse(company.adv_json);
           companies[comp.id] = comp;
-          return;
         });
         this.setState({
           companies: companies,
