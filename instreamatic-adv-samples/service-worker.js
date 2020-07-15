@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/wp-content/mu-plugins/adv-samples/instreamatic-adv-samples/precache-manifest.a9a2338d1a4cfc8fddcb065248593484.js"
+  "/wp-content/plugins/instreamatic-adv-samples/precache-manifest.c3040e70547a58ddd1044a5228219e9e.js"
 );
 
 self.addEventListener('message', (event) => {
@@ -33,7 +33,7 @@ workbox.core.clientsClaim();
 self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerNavigationRoute(workbox.precaching.getCacheKeyForURL("/wp-content/mu-plugins/adv-samples/instreamatic-adv-samples/index.html"), {
+workbox.routing.registerNavigationRoute(workbox.precaching.getCacheKeyForURL("/wp-content/plugins/instreamatic-adv-samples/index.html"), {
   
   blacklist: [/^\/_/,/\/[^\/?]+\.[^\/]+$/],
 });
