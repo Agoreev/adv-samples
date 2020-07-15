@@ -1,10 +1,10 @@
 {
-  "id": "e-com",
-  "title": "E-Commerce",
-  "image": "http://instreamatic.com/wp-content/uploads/2020/07/e-com-128.png",
+  "id": "cpg",
+  "title": "CPG",
+  "image": "http://instreamatic.com/wp-content/uploads/2020/07/cpg-128.png",
   "questions": [{
     "text": "",
-    "track": "http://dztk6yq65a9he.cloudfront.net/static/creative/audio/02/510D14.mp3",
+    "track": "http://dztk6yq65a9he.cloudfront.net/static/creative/audio/9A/8C7924.mp3",
     "title": "Intro Teaser",
     "answers": {
       "interest": {
@@ -12,7 +12,7 @@
         "text": "Interest",
         "finalAnswers": [{
           "text": "",
-          "track": "http://dztk6yq65a9he.cloudfront.net/static/creative/audio/D2/EA01B8.mp3",
+          "track": "http://dztk6yq65a9he.cloudfront.net/static/creative/audio/69/82E6EE.mp3",
           "title": "AI Responce If Interest"
         }]
       },
@@ -21,7 +21,7 @@
         "text": "No interest",
         "finalAnswers": [{
           "text": "",
-          "track": "http://dztk6yq65a9he.cloudfront.net/static/creative/audio/66/C5572A.mp3",
+          "track": "http://dztk6yq65a9he.cloudfront.net/static/creative/audio/91/D11EB7.mp3",
           "title": "AI Responce If No Interest"
         }]
       },
@@ -39,7 +39,7 @@
         "text": "Silence",
         "finalAnswers": [{
           "text": "",
-          "track": "http://dztk6yq65a9he.cloudfront.net/static/creative/audio/1E/44F475.mp3",
+          "track": "http://dztk6yq65a9he.cloudfront.net/static/creative/audio/2B/625834.mp3",
           "title": "AI Responce If Silence"
         }]
       },
@@ -48,16 +48,16 @@
         "text": "Not understood",
         "questions": [{
           "text": "",
-          "track": "http://dztk6yq65a9he.cloudfront.net/static/creative/audio/18/ADFAFB.mp3",
+          "track": "http://dztk6yq65a9he.cloudfront.net/static/creative/audio/C1/C6B968.mp3",
           "title": "AI Responce If Not Understood",
           "answers": {
             "NotUnderstoodAgain": {
               "btnText": "Not understood again",
-              "text": "Not understood again",
+              "text": "Not Understood Again",
               "finalAnswers": [{
                 "text": "",
                 "track": "http://dztk6yq65a9he.cloudfront.net/static/creative/audio/01/BEE0A9.mp3",
-                "title": "AI Responce if Not Understood Again"
+                "title": "AI Responce If Not Understood Sgain"
               }]
             }
           }

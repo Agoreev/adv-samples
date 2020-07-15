@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "2317b64c5c1c3724404ca0c48dfc0175",
+    "revision": "1bafe3ac2033022c0e54d36247f9826a",
     "url": "/wp-content/plugins/instreamatic-adv-samples/index.html"
   },
   {
@@ -8,8 +8,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/wp-content/plugins/instreamatic-adv-samples/static/css/2.9131a3d6.chunk.css"
   },
   {
-    "revision": "e702157bff6583d34975",
-    "url": "/wp-content/plugins/instreamatic-adv-samples/static/css/main.652e2b6d.chunk.css"
+    "revision": "613945e45276c2007216",
+    "url": "/wp-content/plugins/instreamatic-adv-samples/static/css/main.75df85bf.chunk.css"
   },
   {
     "revision": "3a03591ef383c405e7f9",
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/wp-content/plugins/instreamatic-adv-samples/static/js/2.abdcf6d5.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "e702157bff6583d34975",
-    "url": "/wp-content/plugins/instreamatic-adv-samples/static/js/main.79753b47.chunk.js"
+    "revision": "613945e45276c2007216",
+    "url": "/wp-content/plugins/instreamatic-adv-samples/static/js/main.31ec2728.chunk.js"
   },
   {
     "revision": "246bc59d81e679416e2d",
