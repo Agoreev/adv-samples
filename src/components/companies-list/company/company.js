@@ -1,11 +1,12 @@
 import React from "react";
 import classes from "./company.module.css";
+import { Link } from "react-router-dom";
 
 const Company = ({ company, onCompanySelected }) => {
     return (
-        <div
+        <Link
             className={classes.Company}
-            onClick={() => onCompanySelected(company.id)}
+            to={{ pathName: "/samples/", state: { sampleId: company.id } }}
         >
             <img
                 className={classes.Image}
@@ -13,7 +14,7 @@ const Company = ({ company, onCompanySelected }) => {
                 alt={company.title}
             />
             <span className={classes.Title}>{company.title}</span>
-        </div>
+        </Link>
     );
 };
 
