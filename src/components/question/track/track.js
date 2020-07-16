@@ -6,7 +6,7 @@ import AudioSpectrum from "react-audio-spectrum";
 
 class Track extends Component {
   state = {
-    audioPlaying: false,
+    audioCanPlay: false,
     autoPlay: false,
   };
   //must play on track prop changes
@@ -17,9 +17,14 @@ class Track extends Component {
   }
   player = createRef();
 
-  onAudioPlaying = () => {
+  onAudioCanPlay = () => {
     this.setState({
-      audioPlaying: true,
+      audioCanPlay: true,
+      autoPlay: true,
+    });
+  };
+  onStartPlaying = () => {
+    this.setState({
       autoPlay: true,
     });
   };
@@ -27,7 +32,7 @@ class Track extends Component {
     const { track, onTrackEnded } = this.props;
     let vizualizer = null;
 
-    if (this.state.audioPlaying) {
+    if (this.state.audioCanPlay) {
       vizualizer = (
         <div className={classes.Vizualizer}>
           <AudioSpectrum
@@ -59,7 +64,8 @@ class Track extends Component {
           autoPlay={this.state.autoPlay}
           onEnded={onTrackEnded}
           ref={this.player}
-          onCanPlay={this.onAudioPlaying}
+          onCanPlay={this.onAudioCanPlay}
+          onPlay={this.onStartPlaying}
           crossOrigin="anonymous"
         />
       </div>
