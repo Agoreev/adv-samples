@@ -13,7 +13,7 @@
         "finalAnswers": [{
           "text": "",
           "track": "http://dztk6yq65a9he.cloudfront.net/static/creative/audio/69/82E6EE.mp3",
-          "title": "AI Responce If Interest"
+          "title": "AI Response if Interested"
         }]
       },
       "noInterest": {
@@ -22,7 +22,7 @@
         "finalAnswers": [{
           "text": "",
           "track": "http://dztk6yq65a9he.cloudfront.net/static/creative/audio/91/D11EB7.mp3",
-          "title": "AI Responce If No Interest"
+          "title": " AI Response if Not Interested"
         }]
       },
       "StrongNo": {
@@ -31,7 +31,7 @@
         "finalAnswers": [{
           "text": "",
           "track": "http://dztk6yq65a9he.cloudfront.net/static/creative/audio/33/112F7A.mp3",
-          "title": "AI Responce If Strong No"
+          "title": "AI Response if Strong No"
         }]
       },
       "Silence": {
@@ -40,7 +40,7 @@
         "finalAnswers": [{
           "text": "",
           "track": "http://dztk6yq65a9he.cloudfront.net/static/creative/audio/2B/625834.mp3",
-          "title": "AI Responce If Silence"
+          "title": "AI Response if Silence"
         }]
       },
       "NotUnderstood": {
@@ -49,7 +49,7 @@
         "questions": [{
           "text": "",
           "track": "http://dztk6yq65a9he.cloudfront.net/static/creative/audio/C1/C6B968.mp3",
-          "title": "AI Responce If Not Understood",
+          "title": "AI Response if Not Understood",
           "answers": {
             "NotUnderstoodAgain": {
               "btnText": "Not understood again",
@@ -57,7 +57,7 @@
               "finalAnswers": [{
                 "text": "",
                 "track": "http://dztk6yq65a9he.cloudfront.net/static/creative/audio/01/BEE0A9.mp3",
-                "title": "AI Responce If Not Understood Sgain"
+                "title": "AI Response if Not Understood Again"
               }]
             }
           }

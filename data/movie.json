@@ -13,7 +13,7 @@
         "finalAnswers": [{
           "text": "Thanks god you there",
           "track": "http://dztk6yq65a9he.cloudfront.net/static/creative/audio/51/5DD9DD.mp3",
-          "title": "AI Responce If Interest"
+          "title": "AI Response if Interested"
         }]
       },
       "noInterest": {
@@ -22,7 +22,7 @@
         "finalAnswers": [{
           "text": "What is wrong with you people?",
           "track": "http://dztk6yq65a9he.cloudfront.net/static/creative/audio/6A/134364.mp3",
-          "title": "AI Responce If No Interest"
+          "title": " AI Response if Not Interested"
         }]
       },
       "StrongNo": {
@@ -31,7 +31,7 @@
         "finalAnswers": [{
           "text": "Ouch, that hearts",
           "track": "http://dztk6yq65a9he.cloudfront.net/static/creative/audio/33/112F7A.mp3",
-          "title": "AI Responce If Strong No"
+          "title": "AI Response if Strong No"
         }]
       },
       "Silence": {
@@ -40,7 +40,7 @@
         "finalAnswers": [{
           "text": "It seems that there is no one there. Let's try next time.",
           "track": "http://dztk6yq65a9he.cloudfront.net/static/creative/audio/1E/44F475.mp3",
-          "title": "AI Responce If Silence"
+          "title": "AI Response if Silence"
         }]
       },
       "NotUnderstood": {
@@ -49,7 +49,7 @@
         "questions": [{
           "text": "I'm sorry I didn't get that. Let's try it again.",
           "track": "http://dztk6yq65a9he.cloudfront.net/static/creative/audio/18/ADFAFB.mp3",
-          "title": "AI Responce If Not Understood",
+          "title": "AI Response if Not Understood",
           "answers": {
             "NotUnderstoodAgain": {
               "btnText": "Not understood again",
@@ -57,7 +57,7 @@
               "finalAnswers": [{
                 "text": "I'm having troubles in understanding you right now. Let's try again next time.",
                 "track": "http://dztk6yq65a9he.cloudfront.net/static/creative/audio/01/BEE0A9.mp3",
-                "title": "AI Responce If Not Understood Again"
+                "title": "AI Response if Not Understood Again"
               }]
             }
           }

@@ -15,7 +15,7 @@ const CompaniesList = ({ companies, onCompanySelected }) => {
     });
     return (
         <div>
-            <p className={classes.Header}>Select Sample</p>
+            <p className={classes.Header}>Choose a Brand Category</p>
 
             <div className={classes.CompaniesList}>{list}</div>
         </div>
