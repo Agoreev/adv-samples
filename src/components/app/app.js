@@ -7,18 +7,11 @@ import { getRandomNumber } from "../../utils";
 import Spinner from "../ui/spinner";
 import "./animations.css";
 import classes from "./app.module.css";
-import {
-    BrowserRouter as Router,
-    Route,
-    Switch,
-    withRouter,
-} from "react-router-dom";
+import { withRouter } from "react-router-dom";
 
 class App extends Component {
     state = {
         companies: [],
-        companiesFromJson: {},
-        selectedCompanyId: null,
         loading: true,
     };
 
@@ -41,39 +34,23 @@ class App extends Component {
             });
     }
 
-    onCompanySelected = (companyId) => {
-        this.setState({
-            selectedCompanyId: companyId,
-        });
-    };
-
     onExitFromQuestion = () => {
-        // this.setState({
-        //     selectedCompanyId: null,
-        // });
         this.props.history.push("/samples");
     };
 
     render() {
         const { companies, selectedCompanyId, loading } = this.state;
-        const { location } = this.props;
-        const { sampleId } = location.state;
+        const { sampleId } = this.props.match.params;
 
-        let companiesLayout = <Spinner />;
+        let layout = <Spinner />;
         if (!loading) {
-            companiesLayout = (
-                <CompaniesList
-                    companies={companies}
-                    onCompanySelected={this.onCompanySelected}
-                />
-            );
+            layout = <CompaniesList companies={companies} />;
         }
-        let questionLayout = null;
-        if (sampleId) {
+        if (sampleId && !loading) {
             const questionNumber = getRandomNumber(
                 companies[sampleId].questions.length
             );
-            questionLayout = (
+            layout = (
                 <div>
                     <CompanyLogo
                         image={companies[sampleId].image}
@@ -88,42 +65,15 @@ class App extends Component {
         }
         return (
             <div className={classes.Container}>
-                <Router>
-                    <SwitchTransition mode="out-in">
-                        <CSSTransition
-                            key={location.key || loading}
-                            classNames="layout"
-                            timeout={400}
-                        >
-                            <Switch>
-                                <Route
-                                    path="/samples"
-                                    render={() => {
-                                        return companiesLayout;
-                                    }}
-                                    exact
-                                />
-                                <Route
-                                    path="/samples/:sampleId?"
-                                    render={() => {
-                                        return questionLayout;
-                                    }}
-                                    exact
-                                />
-                                <Route render={() => <h2>Page not found</h2>} />
-                            </Switch>
-                        </CSSTransition>
-                    </SwitchTransition>
-                </Router>
-                {/* <SwitchTransition mode="out-in">
+                <SwitchTransition mode="out-in">
                     <CSSTransition
-                        key={selectedCompanyId || loading}
+                        key={sampleId || loading}
                         classNames="layout"
                         timeout={400}
                     >
                         {layout}
                     </CSSTransition>
-                </SwitchTransition> */}
+                </SwitchTransition>
             </div>
         );
     }

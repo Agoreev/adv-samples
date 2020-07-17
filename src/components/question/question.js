@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import TrackText from "./track-text";
 import Track from "./track";
 import AnswersList from "./answers-list";
 import classes from "./question.module.css";
@@ -59,7 +58,6 @@ class Question extends Component {
                     title: finalAnswer.title,
                     track: finalAnswer.track,
                     selectedAnswer: answerId,
-                    //questionsHistory: [...questionsHistory, question], //add current question to history array
                     showAnswers: false,
                 };
             });
@@ -116,7 +114,6 @@ class Question extends Component {
 
         return (
             <div className={classes.Question}>
-                {/* <TrackText texts={texts} /> */}
                 <SwitchTransition mode="out-in">
                     <CSSTransition
                         classNames="track-title"

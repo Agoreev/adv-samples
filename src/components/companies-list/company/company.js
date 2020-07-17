@@ -2,12 +2,9 @@ import React from "react";
 import classes from "./company.module.css";
 import { Link } from "react-router-dom";
 
-const Company = ({ company, onCompanySelected }) => {
+const Company = ({ company }) => {
     return (
-        <Link
-            className={classes.Company}
-            to={{ pathName: "/samples/", state: { sampleId: company.id } }}
-        >
+        <Link className={classes.Company} to={`/samples/${company.id}`}>
             <img
                 className={classes.Image}
                 src={company.image}
