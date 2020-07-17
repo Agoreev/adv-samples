@@ -8,6 +8,7 @@ import Spinner from "../ui/spinner";
 import "./animations.css";
 import classes from "./app.module.css";
 import { withRouter } from "react-router-dom";
+import qs from "qs";
 
 class App extends Component {
     state = {
@@ -39,8 +40,10 @@ class App extends Component {
     };
 
     render() {
-        const { companies, selectedCompanyId, loading } = this.state;
-        const { sampleId } = this.props.match.params;
+        const { companies, loading } = this.state;
+        const { sampleId } = qs.parse(this.props.location.search, {
+            ignoreQueryPrefix: true,
+        });
 
         let layout = <Spinner />;
         if (!loading) {
@@ -67,7 +70,11 @@ class App extends Component {
             <div className={classes.Container}>
                 <SwitchTransition mode="out-in">
                     <CSSTransition
-                        key={sampleId || loading}
+                        key={
+                            (sampleId && loading) ||
+                            (sampleId && !loading) ||
+                            loading
+                        }
                         classNames="layout"
                         timeout={400}
                     >

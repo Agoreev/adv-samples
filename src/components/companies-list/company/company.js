@@ -4,7 +4,10 @@ import { Link } from "react-router-dom";
 
 const Company = ({ company }) => {
     return (
-        <Link className={classes.Company} to={`/samples/${company.id}`}>
+        <Link
+            className={classes.Company}
+            to={`/samples?sampleId=${company.id}`}
+        >
             <img
                 className={classes.Image}
                 src={company.image}

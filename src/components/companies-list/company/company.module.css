@@ -4,16 +4,27 @@
   margin: 30px 20px;
   cursor: pointer;
   padding: 15px 0;
-  display: flex;
+  display: flex !important;
   flex-direction: column;
   align-items: center;
   transition: box-shadow 0.3s ease-out;
-  text-decoration: none;
+  text-decoration: none !important;
+  border: none !important;
+}
 
+.Company:after {
+  content: none !important;
+  background: transparent !important;
+}
+
+.Company:after:hover {
+  content: none !important;
+  background: transparent !important;
 }
 
 .Company:hover {
-  text-decoration: none;
+  text-decoration: none !important;
+  border: none !important;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
 }
 
