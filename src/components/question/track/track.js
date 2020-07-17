@@ -20,7 +20,6 @@ class Track extends Component {
     onAudioCanPlay = () => {
         this.setState({
             audioCanPlay: true,
-            autoPlay: true,
         });
     };
     onStartPlaying = () => {

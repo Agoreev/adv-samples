@@ -52,7 +52,7 @@ class Question extends Component {
             // if current answer has no other questions it must have final answer from server
             const answerNumber = getRandomNumber(answer.finalAnswers.length);
             const finalAnswer = answer.finalAnswers[answerNumber];
-            this.setState(({ texts, questionsHistory, question }) => {
+            this.setState(({ texts }) => {
                 return {
                     texts: [...texts, { text: answer.text, type: "answer" }],
                     title: finalAnswer.title,
