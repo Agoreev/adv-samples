@@ -1,11 +1,12 @@
 .Container {
   width: auto;
   margin-bottom: 15px;
+  min-height: 720px;
 }
 
-@media (min-width: 901px) {
+@media (min-width: 751px) {
   .Container {
-    width: 900px;
+    width: 750px;
     margin: 0 auto 15px auto;
   }
 }

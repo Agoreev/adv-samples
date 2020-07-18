@@ -1,0 +1,34 @@
+.Header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-bottom: 15px;
+  z-index: 500;
+}
+
+.Header img {
+  width: 90px;
+  height: 90px;
+}
+
+.Header span {
+  font-size: 18px;
+}
+
+.BackLink {
+  margin-right: auto;
+  font-size: 18px;
+}
+
+.LogoWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 100px;
+}
+
+@media (min-width: 600px) {
+  .Header span {
+    font-size: 22px;
+  }
+}
