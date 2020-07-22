@@ -1,7 +1,7 @@
 {
   "id": "insurance",
   "title": "Insurance",
-  "image": "https://instreamatic.com/wp-content/uploads/2020/07/insurance.svg",
+  "image": "/wp-content/uploads/2020/07/insurance.svg",
   "questions": [{
     "text": "Hey, I'm a sleepy driver. I didn't sleep well last night, but i drink a lot of coffee today? so I know I can drive for another hour ... easy, but, you know what? This time i didn't make it. Wanna know why?",
     "track": "https://dztk6yq65a9he.cloudfront.net/static/creative/audio/9F/458DE0.mp3",

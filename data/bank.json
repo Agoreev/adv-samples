@@ -1,7 +1,7 @@
 {
   "id": "bank",
   "title": "Bank",
-  "image": "https://instreamatic.com/wp-content/uploads/2020/07/bank.svg",
+  "image": "/wp-content/uploads/2020/07/bank.svg",
   "questions": [{
     "text": "",
     "track": "https://dztk6yq65a9he.cloudfront.net/static/creative/audio/12/6683B1.mp3",

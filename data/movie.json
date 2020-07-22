@@ -1,7 +1,7 @@
 {
   "id": "tv_show",
   "title": "TV Show",
-  "image": "https://instreamatic.com/wp-content/uploads/2020/07/movie.svg",
+  "image": "/wp-content/uploads/2020/07/movie.svg",
   "questions": [{
     "text": "Hello, can you hear me? I have something I need to tell you",
     "track": "https://dztk6yq65a9he.cloudfront.net/static/creative/audio/BD/45CE8A.mp3",

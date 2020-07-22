@@ -18,12 +18,12 @@ function instreamtic_company_props_meta_box($company)
     <table class="form-table">
         <tbody>
             <tr>
-                <th scope="row">
+            <th scope="row">
                     <label for="adv_json">Adv JSON</label>
                 </th>
 
                 <td>
-                    <input type="text" required value="<?php echo $adv_json ?>" name="adv_json" id="adv_json" placeholder="Adv json">
+                    <textarea rows="20" cols="100" required  name="adv_json" id="adv_json" placeholder="Adv json"><?php echo $adv_json ?></textarea>
                 </td>
             </tr>
         </tbody>
