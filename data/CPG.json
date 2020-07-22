@@ -1,68 +1,82 @@
 {
-  "id": "cpg",
-  "title": "CPG",
-  "image": "/wp-content/uploads/2020/07/cpg.svg",
-  "questions": [{
-    "text": "",
-    "track": "https://dztk6yq65a9he.cloudfront.net/static/creative/audio/9A/8C7924.mp3",
-    "title": "Intro Teaser",
-    "answers": {
-      "interest": {
-        "btnText": "Interest",
-        "text": "Interest",
-        "finalAnswers": [{
-          "text": "",
-          "track": "https://dztk6yq65a9he.cloudfront.net/static/creative/audio/69/82E6EE.mp3",
-          "title": "AI Response if Interested"
-        }]
-      },
-      "noInterest": {
-        "btnText": "No inteterst",
-        "text": "No interest",
-        "finalAnswers": [{
-          "text": "",
-          "track": "https://dztk6yq65a9he.cloudfront.net/static/creative/audio/91/D11EB7.mp3",
-          "title": " AI Response if Not Interested"
-        }]
-      },
-      "StrongNo": {
-        "btnText": "Strong no",
-        "text": "Strong no",
-        "finalAnswers": [{
-          "text": "",
-          "track": "https://dztk6yq65a9he.cloudfront.net/static/creative/audio/33/112F7A.mp3",
-          "title": "AI Response if Strong No"
-        }]
-      },
-      "Silence": {
-        "btnText": "Silence",
-        "text": "Silence",
-        "finalAnswers": [{
-          "text": "",
-          "track": "https://dztk6yq65a9he.cloudfront.net/static/creative/audio/2B/625834.mp3",
-          "title": "AI Response if Silence"
-        }]
-      },
-      "NotUnderstood": {
-        "btnText": "Not understood",
-        "text": "Not understood",
-        "questions": [{
-          "text": "",
-          "track": "https://dztk6yq65a9he.cloudfront.net/static/creative/audio/C1/C6B968.mp3",
-          "title": "AI Response if Not Understood",
-          "answers": {
-            "NotUnderstoodAgain": {
-              "btnText": "Not understood again",
-              "text": "Not Understood Again",
-              "finalAnswers": [{
-                "text": "",
-                "track": "https://dztk6yq65a9he.cloudfront.net/static/creative/audio/01/BEE0A9.mp3",
-                "title": "AI Response if Not Understood Again"
-              }]
+    "id": "cpg",
+    "title": "CPG",
+    "image": "/wp-content/uploads/2020/07/cpg.svg",
+    "questions": [
+        {
+            "text": "",
+            "track": "https://dztk6yq65a9he.cloudfront.net/static/creative/audio/9A/8C7924.mp3",
+            "title": "Intro Teaser",
+            "answers": {
+                "interest": {
+                    "btnText": "Interest",
+                    "text": "Interest",
+                    "finalAnswers": [
+                        {
+                            "text": "",
+                            "track": "https://dztk6yq65a9he.cloudfront.net/static/creative/audio/69/82E6EE.mp3",
+                            "title": "AI Response if Interested"
+                        }
+                    ]
+                },
+                "noInterest": {
+                    "btnText": "No inteterst",
+                    "text": "No interest",
+                    "finalAnswers": [
+                        {
+                            "text": "",
+                            "track": "https://dztk6yq65a9he.cloudfront.net/static/creative/audio/91/D11EB7.mp3",
+                            "title": " AI Response if Not Interested"
+                        }
+                    ]
+                },
+                "StrongNo": {
+                    "btnText": "Strong no",
+                    "text": "Strong no",
+                    "finalAnswers": [
+                        {
+                            "text": "",
+                            "track": "https://dztk6yq65a9he.cloudfront.net/static/creative/audio/33/112F7A.mp3",
+                            "title": "AI Response if Strong No"
+                        }
+                    ]
+                },
+                "Silence": {
+                    "btnText": "Silence",
+                    "text": "Silence",
+                    "finalAnswers": [
+                        {
+                            "text": "",
+                            "track": "https://dztk6yq65a9he.cloudfront.net/static/creative/audio/2B/625834.mp3",
+                            "title": "AI Response if Silence"
+                        }
+                    ]
+                },
+                "NotUnderstood": {
+                    "btnText": "Not understood",
+                    "text": "Not understood",
+                    "questions": [
+                        {
+                            "text": "",
+                            "track": "https://dztk6yq65a9he.cloudfront.net/static/creative/audio/C1/C6B968.mp3",
+                            "title": "AI Response if Not Understood",
+                            "answers": {
+                                "NotUnderstoodAgain": {
+                                    "btnText": "Not understood again",
+                                    "text": "Not Understood Again",
+                                    "finalAnswers": [
+                                        {
+                                            "text": "",
+                                            "track": "https://dztk6yq65a9he.cloudfront.net/static/creative/audio/01/BEE0A9.mp3",
+                                            "title": "AI Response if Not Understood Again"
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    ]
+                }
             }
-          }
-        }]
-      }
-    }
-  }]
+        }
+    ]
 }
