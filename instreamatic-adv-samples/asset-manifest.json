@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/wp-content/plugins/instreamatic-adv-samples/static/css/main.ffd462d8.chunk.css",
-    "main.js": "/wp-content/plugins/instreamatic-adv-samples/static/js/main.90fcf381.chunk.js",
-    "main.js.map": "/wp-content/plugins/instreamatic-adv-samples/static/js/main.90fcf381.chunk.js.map",
+    "main.css": "/wp-content/plugins/instreamatic-adv-samples/static/css/main.ef0703e0.chunk.css",
+    "main.js": "/wp-content/plugins/instreamatic-adv-samples/static/js/main.41eb43ce.chunk.js",
+    "main.js.map": "/wp-content/plugins/instreamatic-adv-samples/static/js/main.41eb43ce.chunk.js.map",
     "runtime-main.js": "/wp-content/plugins/instreamatic-adv-samples/static/js/runtime-main.f0232b63.js",
     "runtime-main.js.map": "/wp-content/plugins/instreamatic-adv-samples/static/js/runtime-main.f0232b63.js.map",
     "static/css/2.9131a3d6.chunk.css": "/wp-content/plugins/instreamatic-adv-samples/static/css/2.9131a3d6.chunk.css",
     "static/js/2.52a8d74e.chunk.js": "/wp-content/plugins/instreamatic-adv-samples/static/js/2.52a8d74e.chunk.js",
     "static/js/2.52a8d74e.chunk.js.map": "/wp-content/plugins/instreamatic-adv-samples/static/js/2.52a8d74e.chunk.js.map",
     "index.html": "/wp-content/plugins/instreamatic-adv-samples/index.html",
-    "precache-manifest.df37baa58cfc84af9531df18dd1c337b.js": "/wp-content/plugins/instreamatic-adv-samples/precache-manifest.df37baa58cfc84af9531df18dd1c337b.js",
+    "precache-manifest.384b108ba53b1c9d498927273da51cec.js": "/wp-content/plugins/instreamatic-adv-samples/precache-manifest.384b108ba53b1c9d498927273da51cec.js",
     "service-worker.js": "/wp-content/plugins/instreamatic-adv-samples/service-worker.js",
     "static/css/2.9131a3d6.chunk.css.map": "/wp-content/plugins/instreamatic-adv-samples/static/css/2.9131a3d6.chunk.css.map",
-    "static/css/main.ffd462d8.chunk.css.map": "/wp-content/plugins/instreamatic-adv-samples/static/css/main.ffd462d8.chunk.css.map",
+    "static/css/main.ef0703e0.chunk.css.map": "/wp-content/plugins/instreamatic-adv-samples/static/css/main.ef0703e0.chunk.css.map",
     "static/js/2.52a8d74e.chunk.js.LICENSE.txt": "/wp-content/plugins/instreamatic-adv-samples/static/js/2.52a8d74e.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.f0232b63.js",
     "static/css/2.9131a3d6.chunk.css",
     "static/js/2.52a8d74e.chunk.js",
-    "static/css/main.ffd462d8.chunk.css",
-    "static/js/main.90fcf381.chunk.js"
+    "static/css/main.ef0703e0.chunk.css",
+    "static/js/main.41eb43ce.chunk.js"
   ]
 }
