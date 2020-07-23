@@ -81,3 +81,21 @@
   transform: translateX(100%);
   transition: all 500ms ease-out;
 }
+
+.vizualizer-enter {
+  opacity: 0;
+}
+
+.vizualizer-enter-active {
+  opacity: 1;
+  transition: all 500ms ease-out;
+}
+
+.vizualizer-exit {
+  opacity: 1;
+}
+
+.vizualizer-exit-active {
+  opacity: 0;
+  transition: all 500ms ease-out;
+}
