@@ -2,7 +2,7 @@
 
 ![](https://github.com/Agoreev/adv-samples/blob/master/instreamatic.gif)
 
-Place the project folder in the folder mu-plugins of your wordpress site and in php file in mu-plugins-directory put this code:
+Place the project folder in the folder mu-plugins of the wordpress site and in php file in mu-plugins-directory put this code:
 
 `require_once('adv-samples/instreamatic-adv-samples/instreamatic.php');`
 
