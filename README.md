@@ -8,7 +8,7 @@ Place the project folder in the folder mu-plugins of the wordpress site and in p
 
 Or install as wordpress plugin manually via admin panel - in this case only "instreamatic-adv-samples" folder needed (this folder contains build project, put this folder in archieve and upload as plugin).
 
-To add the widget with ad samples on the page write the shortcode `[instreamatic_adv_samples]`.
+To add the widget with ad samples on the page write the shortcode `[instreamatic_adv_samples]` in the right place.
 
 Ad samples can be edited in the admin panel in the Companies section.
 
